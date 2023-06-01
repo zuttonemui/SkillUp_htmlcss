@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hamburger-menu {
+  display: none;
+  position: relative;
+  border: 1px solid #fff;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger-menu span {
+  position: absolute;
+  left: 4px;
+  top:4px;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+header {
+  width: 100%;
+  background-color: #EC715F;
+}
+
+.header-group {
+  display: flex;
+  justify-content: flex-end;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 70px;
+}
+
+.header-group > :first-child {
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+.nav li {
+  color: #fff;
+  line-height: 70px;
+  padding: 0 30px;
+}
+
+#main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  color: #fafafa;
+  text-align: center;
+}
+
+.mv-group {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.mv-title {
+  padding-top: 200px;
+  font-size: 64px;
+}
+
+.mv-text {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#portfolio,
+#profile {
+  background-color: #eceff1;
+}
+
+.pf-group,
+.feature-group,
+.profile-group {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 90px;
+  font-size: 32px;
+}
+
+h2::after {
+  content: '';
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
+  display: block;
+  margin: 8px auto 0 auto;
+}
+
+p {
+  font-size: 16px;
+}
+
+.pf-text,
+.feature-text,
+.profile-text,
+.contact-text {
+  padding: 30px 0 30px;
+}
+
+.pf-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.pf-content {
+  width: 300px;
+  height: 250px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.pf-content:nth-child(1){
+  background-image: url(img/sketch.jpg);
+}
+
+.pf-content:nth-child(2){
+  background-image: url(img/websuku.png);
+}
+
+.pf-content:nth-child(3){
+  background-image: url(img/write.jpg);
+  margin-right: 0;
+}
+
+.pf-content:nth-child(4){
+  background-image: url(img/webcamp.png);
+  margin-bottom: 0;
+}
+
+.pf-content:nth-child(5){
+  background-image: url(img/talk.jpg);
+  margin-bottom: 0;
+}
+
+
+.pf-content:nth-child(6){
+  background-image: url(img/webcamp-mother.png);
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.strength-group {
+  display: flex;
+  justify-content: flex-start;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.strength {
+  width: 320px;
+  height: auto;
+  margin-right: 10px;
+  padding-bottom: 90px;
+}
+
+.strength:last-child {
+  margin-right: 0;
+}
+
+.strength i {
+  font-size: 60px;
+  color: #000;
+}
+
+.strength h3 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.strength p,
+.introduction,
+.contact-box2 {
+  text-align: left;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img,
+.introduction {
+  width: 512px;
+}
+
+.profile-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.introduction h3,
+.contact-box2 h3{
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.introduction-title2,
+.tel {
+  padding-top: 20px;
+}
+
+.contact-group {
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.contact-box2 {
+  display: flex;
+}
+
+.contact-box2 a {
+  text-decoration: underline
+}
+
+.contact-number,
+.contact-sns {
+  width: 400px;
+}
+
+.contact-sns .fa-brands {
+  font-size: 50px;
+  padding-right: 20px;
+  color: #000;
+}
+
+.contact-sns .fa-brands:last-child {
+  padding-right: 0;
+}
+
+.contact-number-content {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.contact-sns-content {
+  width: 190px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #ec725f;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header-group {
+    width: 90%;
+    height: 50px;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    display: block;
+  }
+}
